@@ -1,0 +1,36 @@
+{
+  "name": "photostore-backend",
+  "version": "1.0.0",
+  "description": "INSY7314 ICE Task 4 - Photostore REST API (Node.js, Express, MongoDB, JWT, Cloudinary)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed:admin": "node scripts/seedAdmin.js",
+    "test": "node --test --test-concurrency=1 tests/api.test.js"
+  },
+  "author": "Vuyisa Mgudlwa (ST10207887)",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.11.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.0",
+    "multer": "^2.4.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.1"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "8.0.4"
+    }
+  }
+}
